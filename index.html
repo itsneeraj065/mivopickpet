@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mivo Pick Pet - Bhopal's No.1 Pet Service</title>
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts & FontAwesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Mivo Pick Pet Logo" onerror="this.src='https://via.placeholder.com/150x50?text=MIVO+PET'">
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a href="https://wa.me/" target="_blank" class="btn-book-now">
+                    <i class="fa-brands fa-whatsapp"></i> Book Now
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="hero-badge"><i class="fa-solid fa-paw"></i> Bhopal's No.1 Pet Service</span>
+                <h1>Happy Pets<br><span class="highlight-text">Happy Tails</span></h1>
+                <p>Complete care, trusted service, for your furry, feathery & aquatic friends.</p>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-pets.png" alt="Happy pets illustration" onerror="this.src='https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>Choose your pet, explore our services</p>
+            </div>
+            <div class="services-grid">
+                <!-- Dog Service Card -->
+                <div class="service-card dog-card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/dog-card.png" alt="Dog Service" onerror="this.src='https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=300&q=80'">
+                        <div class="paw-badge"><i class="fa-solid fa-paw"></i></div>
+                    </div>
+                    <h3>Dog</h3>
+                    <p>Walking, Grooming, Pet Taxi, Vet Visit & More</p>
+                    <a href="#" class="btn-service">Explore Services &rarr;</a>
+                </div>
+
+                <!-- Cat Service Card -->
+                <div class="service-card cat-card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/cat-card.png" alt="Cat Service" onerror="this.src='https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=300&q=80'">
+                        <div class="paw-badge"><i class="fa-solid fa-paw"></i></div>
+                    </div>
+                    <h3>Cat</h3>
+                    <p>Grooming, Vet Visit, Care & More</p>
+                    <a href="#" class="btn-service">Explore Services &rarr;</a>
+                </div>
+
+                <!-- Aquarium Service Card -->
+                <div class="service-card aquarium-card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/aquarium-card.png" alt="Aquarium Service" onerror="this.src='https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=300&q=80'">
+                        <div class="paw-badge"><i class="fa-solid fa-fish"></i></div>
+                    </div>
+                    <h3>Aquarium</h3>
+                    <p>Cleaning, Maintenance, Setup & More</p>
+                    <span class="status-badge"><i class="fa-regular fa-clock"></i> Coming Soon</span>
+                </div>
+
+                <!-- Birds Service Card -->
+                <div class="service-card bird-card">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/bird-card.png" alt="Birds Service" onerror="this.src='https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=300&q=80'">
+                        <div class="paw-badge"><i class="fa-solid fa-dove"></i></div>
+                    </div>
+                    <h3>Birds</h3>
+                    <p>Care, Grooming, Health & More</p>
+                    <span class="status-badge"><i class="fa-regular fa-clock"></i> Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Banner -->
+    <section class="features-banner">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Trained & Verified Drivers</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Bhopal Service Area</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-heart"></i>
+                <span>Your Pet's Safety Our Priority</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-shield-dog"></i>
+                <span>Trusted Care & Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Bottom Section -->
+    <section class="about-section" id="about">
+        <div class="container about-container">
+            <div class="about-text-left">
+                <h2>Because They Deserve The Best <i class="fa-solid fa-heart" style="color: #ff4757;"></i></h2>
+            </div>
+            <div class="about-image-center">
+                <img src="assets/images/bottom-pets.png" alt="Group of happy pets" onerror="this.src='https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&w=600&q=80'">
+            </div>
+            <div class="about-text-right">
+                <p>At Mivo Pick Pet, we bring trusted and professional pet care services right to your doorstep. Because your pet's happiness is our mission.</p>
+                <a href="#services" class="btn-know-more">Know More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="assets/images/logo.png" alt="Mivo Pick Pet Logo" onerror="this.src='https://via.placeholder.com/150x50?text=MIVO+PET'">
+            </div>
+            <div class="footer-social">
+                <p>Follow Our Journey</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-tagline">
+                <p>Pets &bull; People &bull; Bhopal</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to External JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
