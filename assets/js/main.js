@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuToggle && mainNav) {
         menuToggle.addEventListener('click', () => {
             mainNav.classList.toggle('active');
-            
-            // Toggle hamburger icon between bars and close (X)
             const icon = menuToggle.querySelector('i');
             if (mainNav.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
@@ -18,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Close menu when clicking any nav link on mobile
         document.querySelectorAll('.main-nav a').forEach(link => {
             link.addEventListener('click', () => {
                 mainNav.classList.remove('active');
@@ -29,24 +26,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Add smooth active state updates to navigation links on scroll
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.main-nav a');
+    // Lightweight 3D Mouse Tilt Effect for Cards and Elements
+    const cards3D = document.querySelectorAll('.card-3d');
 
-    window.addEventListener('scroll', () => {
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (window.scrollY >= (sectionTop - 150)) {
-                current = section.getAttribute('id');
-            }
+    cards3D.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left; //x position within card
+            const y = e.clientY - rect.top;  //y position within card
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            // Calculate rotation angle (max 15 degrees for smooth effect)
+            const rotateX = -((y - centerY) / centerY) * 12;
+            const rotateY = ((x - centerX) / centerX) * 12;
+
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
         });
 
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
-                link.classList.add('active');
-            }
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
         });
     });
 });
